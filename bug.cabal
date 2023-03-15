@@ -4,7 +4,7 @@ version: 0.1.0.0
 
 executable bug
     main-is: Main.hs
-    build-depends: base ^>=4.15.1.0, async, stm
+    build-depends: base, async, stm
     default-language: Haskell2010
     ghc-options:
         -threaded
