@@ -3,7 +3,7 @@
 
   outputs = { self, nixpkgs }: let
     pkgs = import nixpkgs {system = "x86_64-linux";};
-    deps = [pkgs.cabal-install (pkgs.haskell.packages.ghc925.ghcWithPackages (ps: [ps.async]))];
+    deps = [pkgs.cabal-install (pkgs.haskell.packages.ghc943.ghcWithPackages (ps: [ps.async]))];
     runScript = pkgs.writeShellApplication {
         name = "bugloop";
         runtimeInputs = deps;
